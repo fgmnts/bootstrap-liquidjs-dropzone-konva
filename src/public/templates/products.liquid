@@ -1,0 +1,30 @@
+{% for product in data %}
+  {% assign productKey = product[0] %}
+  {% assign productValueObj = product[1] %}
+  <div class="col-md-4 ">
+    <div class="card">
+      <img
+        src="./img/designer/{{productKey}}_{{ productValueObj.colors[0].label }}_front.webp"
+        class="card-img-top"
+        alt="T-Shirt">
+      <div class="card-body">
+        <h5 class="card-title">{{ productValueObj.name }}</h5>
+        <p class="card-text">{{ productValueObj.tag }}</p>
+        <div class="c-colors js-colors"><!-- voor elk kleur van product, knop maken om kleur te selecteren
+
+          enkel de eerste moet ook een class active krijgen (want we tonen hierboven het eerste kleur > colors[0])
+
+          <span
+          class="c-color-selector js-select-color"
+          data-src="./img/designer/{{productKey}}_{{ color.label }}_front.webp"
+          style="background-color: {{ color.hex }}"
+          title="{{ color.label }}"></span>
+          --></div>
+        <a
+          href="#"
+          class="btn btn-primary js-select-product"
+          data-name="{{productKey}}">Select</a>
+      </div>
+    </div>
+  </div>
+{% endfor %}

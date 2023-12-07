@@ -1,0 +1,41 @@
+{
+  "tshirt": {
+    "name": "T-Shirt",
+    "selector": ".js-tshirt-card",
+    "colors": [
+      { "hex": "#FFF", "label": "white" },
+      { "hex": "#aaa", "label": "grey" },
+      { "hex": "#000", "label": "black" },
+      { "hex": "#000080", "label": "navy" }
+    ],
+    "views": ["front", "back", "left", "right"],
+    "boundingBox": { "top": 125, "right": 700, "bottom": 950, "left": 300 },
+    "tag": "Available in various colors.",
+    "description": "Comfortable cotton t-shirt available in various colors."
+  },
+  "hoodie": {
+    "name": "Hoodie",
+    "selector": ".js-hoodie-card",
+    "colors": [
+      { "hex": "#FFF", "label": "white" },
+      { "hex": "#333", "label": "grey" },
+      { "hex": "#000", "label": "black" }
+    ],
+    "views": ["front", "back", "left", "right", "cap_left", "cap_right"],
+    "boundingBox": { "top": 125, "right": 700, "bottom": 950, "left": 300 },
+    "tag": "Comfortable and stylish.",
+    "description": "Comfortable cotton t-shirt available in various colors."
+  },
+  "tote": {
+    "name": "Tote bag",
+    "selector": ".js-totebag-card",
+    "colors": [
+      { "hex": "#FFF", "label": "white" },
+      { "hex": "#000", "label": "black" }
+    ],
+    "views": ["front", "back"],
+    "boundingBox": { "top": 460, "right": 725, "bottom": 950, "left": 275 },
+    "tag": "Eco-friendly and durable.",
+    "description": "Comfortable cotton t-shirt available in various colors."
+  }
+}
